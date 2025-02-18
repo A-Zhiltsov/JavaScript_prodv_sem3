@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашние отзывы.GB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Домашние отзывы.GB</h1>
+    </header>
+
+    <div class="container">
+        <div id="add-review">
+            <h2>Добавить отзыв</h2>
+            <input type="text" id="product-name" placeholder="Название продукта">
+            <textarea id="review-text" placeholder="Ваш отзыв"></textarea>
+            <button onclick="addReview()">Добавить отзыв</button>
+        </div>
+
+        <div id="view-reviews">
+            <h2>Просмотр отзывов</h2>
+            <ul id="product-list"></ul>
+            <div id="reviews-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

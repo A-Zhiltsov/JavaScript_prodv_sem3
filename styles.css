@@ -1,0 +1,135 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Нейтральная картинка на фон */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+}
+h2 {
+    color: #360ea3;
+}
+
+/* Шапка */
+header {
+    /*background-color: rgba(255, 255, 255, 0.8);  Полупрозрачный белый фон */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #038f77;
+}
+
+/* Контейнер для основного содержимого */
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #93ce63;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    align-items: center;
+}
+
+/* Стили для формы добавления отзыва */
+#add-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#add-review input,
+#add-review textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#add-review button {
+    padding: 10px 15px;
+    background-color: #77a310;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#add-review button:hover {
+    background-color: #e5f50ccc;
+}
+
+/* Стили для списка отзывов */
+#view-reviews h2 {
+    margin-top: 0;
+}
+#view-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100;
+    margin-top: 0;
+}
+
+
+#product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#product-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #360ea3;
+    font-size: 1.1em;
+}
+
+#product-list li:hover {
+    text-decoration: underline;
+}
+
+#reviews-container {
+    margin-top: 20px;
+}
+
+.review-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.review-item button {
+    background-color: #dc3545;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.review-item button:hover {
+    background-color: #c82333;
+}
